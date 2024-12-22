@@ -1,0 +1,442 @@
+.navigation {
+  .topgradient-small {
+    height: 1rem;
+    background: linear-gradient(90deg, #cf0984 0%, #4e2c89 51%, #1c2e8a 100%);
+  }
+  .gradient-bg {
+    background: linear-gradient(90deg, #6f4198 0%, #0288d7 51%, #1d2e89 100%);
+    // position: fixed;
+    width: 100%;
+    // padding: 45px 0px;
+    transition: 0.3s all ease-in-out;
+    z-index: 9;
+    // position: relative;
+
+    .top-header {
+      padding-top: 1rem;
+      padding-bottom: 7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logos {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+        text-decoration: none;
+        img {
+          width: 5rem;
+          height: auto;
+        }
+        .foryear-logo {
+          height: auto;
+          width: 6rem;
+          padding-top: 0.6rem;
+        }
+        .gems-logo {
+          display: flex;
+          gap: 1.5rem;
+          align-items: center;
+          img {
+            width: 4.4rem;
+          }
+          span {
+            font-size: 26px;
+            font-weight: 500;
+            color: #fff;
+          }
+        }
+      }
+      .contacts-header {
+        ul {
+          display: flex;
+          align-items: center;
+          list-style-type: none;
+          color: #fff;
+          .social-header-nav,
+          .consta-header-nav {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            color: #fff;
+          }
+          li {
+            a {
+              color: #fff !important;
+              text-decoration: none;
+              line-height: 0%;
+              .info-text {
+                font-size: 10px;
+              }
+            }
+            border-right: 1px solid #fff;
+            padding: 0rem 1rem 0rem 1rem;
+
+            .info-social {
+              text-align: center;
+              color: #fff;
+            }
+            .mail-phone {
+              display: flex;
+              align-items: center;
+              gap: 1rem;
+              .info-icon {
+                color: #0288d7;
+                width: 2.5rem;
+                border-radius: 100%;
+                height: 2.5rem;
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+              }
+              .info-content {
+                display: flex;
+                flex-direction: column;
+                .info-id {
+                  font-size: 16px;
+                  font-weight: 500;
+                }
+                .info-text {
+                  font-size: 9px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      .all-the-nav-links {
+        display: flex;
+        flex-direction: column !important;
+      }
+      .top-header {
+        display: flex;
+        // padding-bottom: 1rem;
+        display: flex;
+        justify-content: center;
+
+        .logos {
+          display: none;
+          text-decoration: none;
+        }
+        .contacts-header {
+          margin-left: -2rem;
+          ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            color: #fff;
+            .consta-header-nav {
+              flex-direction: column;
+              gap: 1rem;
+              border-right: 1px solid #fff;
+
+              li {
+                border: 0;
+              }
+            }
+            li {
+              a {
+                color: #fff !important;
+                text-decoration: none;
+                .info-text {
+                  font-size: 7px;
+                }
+              }
+              border-right: 1px solid #fff;
+              padding: 0rem 0.5rem 0rem 0.5rem;
+
+              .info-social {
+                text-align: center;
+                color: #fff;
+              }
+              .mail-phone {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                .info-icon {
+                  //   font-size: 9px;
+                  color: #0288d7;
+                  width: 2rem;
+                  border-radius: 100%;
+                  height: 2rem;
+                  background-color: #fff;
+                  display: flex;
+                  align-items: center;
+                  text-align: center;
+                  justify-content: center;
+                }
+                .info-content {
+                  display: flex;
+                  flex-direction: column;
+                  .info-id {
+                    font-size: 9px;
+                    font-weight: 700;
+                  }
+                  .info-text {
+                    font-size: 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .navbar-nav {
+    z-index: 10;
+    position: sticky;
+    width: 100%;
+    .nav-container {
+      background-color: #fff;
+      border-radius: 5px;
+      margin-top: -6rem;
+      height: 4rem;
+
+      .logos {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        text-decoration: none;
+        img {
+          width: 3rem;
+          height: 3rem;
+        }
+        .gems-logo {
+          display: flex;
+          gap: 0.5rem;
+          align-items: center;
+          img {
+            width: 2rem;
+            height: 2.5rem;
+          }
+          span {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0288d7;
+          }
+        }
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+      .offcanvas-navv {
+        .offcanvas-navv-body {
+          width: 100%;
+
+          .nav-offcanvas-nav {
+            padding: 0 1.2rem;
+            display: flex;
+            justify-content: space-between !important;
+            width: 100%;
+            align-items: center;
+            gap: 2rem;
+            .all-the-nav-links {
+              display: flex;
+              justify-content: space-around;
+              //   gap: 3rem;
+              width: 100%;
+            }
+            .middle-line {
+              width: 2px;
+              background-color: #eeeeee;
+              height: 60%;
+            }
+            a {
+              text-transform: uppercase;
+
+              object-fit: fill;
+              white-space: nowrap;
+              @media (max-width: 1200px) {
+                font-size: 14px;
+              }
+              //   width: 100%;
+            }
+            .adding-border-login {
+              border-right: 1px solid #eeeeee;
+              border-left: 1px solid #eeeeee;
+              color: #01a6fd;
+              font-size: 13px;
+              @media (max-width: 768px) {
+                border: none;
+              }
+            }
+            .seach-logo {
+              background-color: #dddddd;
+              border-radius: 100%;
+              width: 2.3rem;
+              height: 2.3rem;
+              align-items: center;
+              text-align: center;
+              color: #fff;
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .active {
+    color: #17d0cf !important;
+  }
+}
+
+.offcanvas-hearder-nav {
+  .logos {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    text-decoration: none;
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+    .gems-logo {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      img {
+        width: 2rem;
+        height: 2.5rem;
+      }
+      span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #0288d7;
+      }
+    }
+  }
+}
+
+.offcanvas-navv-body {
+  .nav-offcanvas-nav {
+    a {
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      color: #333333;
+      @media (max-width: 765px) {
+        margin-bottom: 1rem;
+      }
+    }
+    .adding-border-login {
+      color: #01a6fd;
+    }
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .navigation {
+    .gradient-bg {
+      .top-header {
+        overflow-x: scroll;
+        .logos {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          text-decoration: none;
+          img {
+            width: 3rem;
+            height: 2.5rem;
+          }
+          .gems-logo {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            img {
+              width: 3rem;
+              height: 2.5rem;
+            }
+            span {
+              font-size: 14px;
+              font-weight: 600;
+              color: #fff;
+            }
+          }
+        }
+        .contacts-header {
+          ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            color: #fff;
+            li {
+              a {
+                color: #fff !important;
+                text-decoration: none;
+                .info-text {
+                  font-size: 7px;
+                }
+              }
+              border-right: 1px solid #fff;
+              padding: 0rem 1rem 0rem 1rem;
+
+              .info-social {
+                text-align: center;
+                color: #fff;
+              }
+              .mail-phone {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                .info-icon {
+                  color: #0288d7;
+                  width: 2rem;
+                  border-radius: 100%;
+                  height: 2rem;
+                  background-color: #fff;
+                  display: flex;
+                  align-items: center;
+                  text-align: center;
+                  justify-content: center;
+                }
+                .info-content {
+                  display: flex;
+                  flex-direction: column;
+                  .info-id {
+                    font-size: 9px;
+                    font-weight: 700;
+                  }
+                  .info-text {
+                    font-size: 7px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .navbar-nav {
+      .nav-container {
+        .offcanvas-navv {
+          .offcanvas-navv-body {
+            .nav-offcanvas-nav {
+              a {
+                font-size: 10px;
+                padding: 0;
+              }
+              .seach-logo {
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .all-the-nav-links {
+    display: flex;
+    flex-direction: column !important;
+  }
+}

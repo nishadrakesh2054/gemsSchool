@@ -1,0 +1,49 @@
+.Alumni {
+  .our-alumni {
+    padding-top: 5rem;
+    .ages-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      img {
+        width: 20rem;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .association-guff-alumni {
+      text-align: center;
+      p {
+        font-size: 45px;
+        font-weight: 300;
+        line-height: 55px;
+        // text-align: left;
+        text-transform: uppercase;
+        span {
+          font-weight: 700;
+        }
+        @media (max-width: 768px) {
+          font-size: 28px;
+          line-height: unset;
+        }
+      }
+    }
+  }
+  .few-takksj-alumni {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: center;
+      color: #333333;
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

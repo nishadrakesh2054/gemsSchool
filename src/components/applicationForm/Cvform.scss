@@ -1,0 +1,52 @@
+.cv-form-container {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .form-input {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  button {
+    font-size: 1.1rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Close Button Styling */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    transition: color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #ff0000;
+  }
+
+
+
+  .submit-btn{
+    background: transparent;
+    background: linear-gradient(90deg, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+    border: none !important;
+    border-radius: 4px;
+    text-transform: uppercase;
+    padding: 0.7rem 1rem !important;
+  }
+  

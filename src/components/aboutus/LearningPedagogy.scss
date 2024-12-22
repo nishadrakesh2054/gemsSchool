@@ -1,0 +1,64 @@
+.LearningPedagogy {
+  margin-bottom: 4rem;
+
+  .head-text-le-pda {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 45.6px;
+    text-align: left;
+    span {
+      font-weight: 700;
+    }
+  }
+  .dometex-ped-img {
+    margin-top: 3rem;
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+      color: #333333;
+    }
+    img {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.csr-oberlay {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #f7f7f7;
+
+  .head-text-le-pda {
+    p {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      color: #333333;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .img-tex-csr {
+    img {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 2rem;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+      color: #333333;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

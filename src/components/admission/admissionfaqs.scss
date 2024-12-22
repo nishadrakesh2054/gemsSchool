@@ -1,0 +1,132 @@
+.admisoon-fasq {
+  .find-your-qus {
+    p {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: left;
+      color: #333333;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .qust {
+    padding: 0%;
+    background: none;
+    .tabs-questions {
+      margin-top: 3rem;
+      .questions-tabs {
+        justify-content: unset;
+        border: none;
+        gap: 1.5rem;
+        .nav-item {
+          button {
+            background: #f7f7f7;
+            color: #cccccc;
+            border-radius: 0.5rem !important;
+          }
+          .active {
+            background: linear-gradient(
+              90deg,
+              #01a6fd 0%,
+              #17d0cf 51%,
+              #01a6fd 100%
+            );
+            color: #fff;
+          }
+        }
+      }
+    }
+    .btn-maks {
+      display: flex;
+      gap: 2rem;
+      justify-content: flex-start;
+    }
+  }
+  .FaqsAccordion {
+    margin-bottom: 4rem;
+    .accordion-general {
+      .accordion-item {
+        border: none !important;
+
+        .accordion-headers {
+          button {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            text-align: left;
+          }
+          .collapsed::after {
+            background-color: #17d0cf;
+          }
+          .collapsed {
+            color: #333333;
+            border-left: #cccccc 3px solid;
+          }
+        }
+        .main-ansa {
+          padding-top: 0;
+          color: #777777;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .accordion-general {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    .accordion-item {
+      background-color: transparent;
+      border: none !important;
+      // border-left: #fff 1px solid;
+      margin-bottom: 2rem;
+      border-radius: 0%;
+      .accordion-headers {
+        background-color: transparent !important;
+        button {
+          background-color: transparent !important;
+          border: none;
+          box-shadow: none;
+          border-radius: 0%;
+          padding-top: 0%;
+        }
+        .accordion-button {
+          color: #17d0cf;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 33px;
+          text-align: left;
+          border-left: #17d0cf 3px solid;
+          border-radius: 0% !important;
+        }
+        .accordion-button::after {
+          background-color: #17d0cf;
+          border-radius: 100%;
+          padding: 0.3rem;
+          justify-content: center;
+          display: flex;
+          background-size: contain;
+          background-image: url("../../assets/chevron-up-solid.svg");
+        }
+        .collapsed {
+          color: #ffffff;
+          border-left: #4a8ec0 3px solid;
+          border-radius: 0%;
+        }
+        .collapsed::after {
+          background-color: #4d8fbe;
+        }
+      }
+      .main-ansa {
+        color: #67a0c9;
+        border-left: #17d0cf 3px solid;
+      }
+    }
+  }
+}

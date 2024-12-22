@@ -1,0 +1,193 @@
+.academics {
+  .academics-comtaimewr {
+    margin-top: 7rem;
+    .imgs-acd {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+    .academic-tab-col {
+    }
+    .about-page {
+      .img-side-acde {
+        padding-right: 2rem;
+        @media (max-width: 786px) {
+          padding-top: unset;
+          width: 100%;
+        }
+      }
+      .related-links-message {
+        margin-top: 0%;
+        @media (max-width: 786px) {
+          margin-top: 2rem;
+        }
+        .tabs-message-about {
+          a {
+            border-bottom: 1px solid #eeeeee;
+            background: #f7f7f7;
+            color: #777777;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+            text-decoration: none;
+            padding: 1rem 1rem;
+          }
+        }
+        .acadamic-tab-head {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .beyo-exes {
+    background: #f7f7f7;
+    padding: 7rem 0;
+    .bycs-exe-text {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+      margin-bottom: 3rem;
+    }
+    p {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+
+  .conta-tab-aca {
+    // margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    .head-tav-ava {
+      margin-bottom: 2rem;
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: left;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+
+  .middl-conta {
+    margin-top: 3rem;
+  }
+
+  .ipc-full-width {
+    background-image: url("../../assets/ipc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5rem 0;
+    width: 100vw; /* Set the content width */
+
+    // height: 30rem;
+
+    .head-ipc {
+      display: flex;
+      //   justify-content: center;
+
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: left;
+      color: #fff;
+      align-items: center;
+      gap: 1rem;
+      span {
+        font-weight: 700;
+      }
+
+      img {
+        width: 5rem;
+        height: 4rem;
+      }
+    }
+    .ipc-expalin {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+  .middle-school-full {
+  }
+  .core-sub-offered {
+    margin: 7rem 0;
+    .code-text {
+      margin-bottom: 3rem;
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+    }
+    .row-acade {
+      background: #f7f7f7;
+      border-radius: 4px;
+
+      .col {
+        border-bottom: 1px solid #eeeeee;
+
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: left;
+        color: #777777;
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.middle-school {
+  .ipc-full-width {
+    padding: 5rem 0;
+    background-image: url(../../../assets/ipc.jpg);
+    .head-ipc {
+      .text-ipc {
+        @media (max-width: 786px) {
+          font-size: 30px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  .about-page {
+    .img-side-acde {
+      img {
+        width: 100%;
+      }
+      .imgs-acd-side-img-sec {
+        height: 30rem;
+        object-fit: cover;
+      }
+    }
+  }
+}

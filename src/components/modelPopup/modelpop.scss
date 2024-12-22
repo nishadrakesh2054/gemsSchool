@@ -1,0 +1,28 @@
+.modal-content {
+  border-radius: 10px;
+  width: auto !important;
+}
+.body-popup {
+  background: transparent;
+  // padding: 5rem;
+  border-radius: 10px;
+
+  a {
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+    .popup1 {
+      width: 50vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    a {
+      .popup1 {
+        width: 100%;
+      }
+    }
+  }
+}

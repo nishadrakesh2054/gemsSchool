@@ -1,0 +1,141 @@
+.Gallery {
+  .about-page {
+    margin: 7rem 0;
+    .imges-kids {
+      display: flex;
+
+      // justify-content: space-between;
+      // width: 100%;
+      gap: 1rem;
+      .bigimage {
+        flex: 2;
+        img {
+          width: 100%;
+        }
+      }
+
+      .small-imgs {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        flex: 1;
+        flex-wrap: wrap;
+
+        img {
+          width: 97%;
+        }
+        img:first-child {
+          padding-bottom: 0.5rem;
+        }
+        img:last-child {
+          padding-top: 0.5rem;
+        }
+      }
+    }
+    .welcome-togem {
+      margin-top: 3rem;
+      .wel-gem {
+        font-size: 38px;
+        font-weight: 300;
+        line-height: 45.6px;
+        text-align: left;
+        span {
+          font-weight: 700;
+        }
+      }
+      .sometext {
+        margin-top: 2rem;
+        p {
+          color: #333333;
+        }
+      }
+    }
+    .edu-app {
+      .heading-app {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+        span {
+          font-weight: 700;
+        }
+      }
+      .vidya-img {
+        img {
+          width: 100%;
+        }
+      }
+      .vidya-app-footer-text {
+        margin-top: 2rem;
+      }
+    }
+    .related-links-message {
+      margin-bottom: 5 rem;
+      p {
+        span {
+          font-weight: 700;
+        }
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+      }
+      .tabs-message-about {
+        background-color: #f7f7f7;
+
+        a {
+          color: #777777;
+          border-bottom: 1px solid #eeeeee;
+          padding: 1rem var(--bs-nav-link-padding-x);
+
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+        }
+        .active {
+          background-color: transparent;
+          font-weight: bold;
+        }
+
+        .accordion {
+          .accordion-item {
+            background-color: #f7f7f7;
+
+            border: none;
+            .accordion-button {
+              background-color: transparent;
+              padding: 1rem var(--bs-nav-link-padding-x);
+              color: #777777;
+
+              border-bottom: 1px solid #eeeeee;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .accordion-button::after {
+              margin-left: 0.5rem;
+              background-size: 0.7rem;
+            }
+            .accordion-collapse {
+              padding: 0%;
+              .accordion-body {
+                padding: 0%;
+
+                a {
+                  color: #777777;
+                  border-bottom: 1px solid #eeeeee;
+                }
+                .active {
+                  background-color: transparent;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

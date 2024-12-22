@@ -1,0 +1,128 @@
+.vidya-aap {
+  .academics-comtaimewr {
+    .about-page {
+      .conta-tab-ac-vidya {
+        margin-bottom: 1rem;
+
+        .head-tav-ava {
+          margin-bottom: 2rem;
+
+          p {
+            font-size: 38px;
+            font-weight: 300;
+            line-height: 45.6px;
+            text-align: left;
+
+            span {
+              font-weight: 700;
+            }
+          }
+        }
+
+        p {
+          color: #333333;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 28px;
+          text-align: left;
+        }
+      }
+      .FaqsAccordion {
+        margin-bottom: 4rem;
+        .accordion-general {
+          .accordion-item {
+            .accordion-headers {
+              button {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 30px;
+                text-align: left;
+              }
+              .collapsed::after {
+                background-color: #17d0cf;
+              }
+              .collapsed {
+                color: #333333;
+                border-left: #cccccc 3px solid;
+              }
+            }
+            .main-ansa {
+              padding-top: 0%;
+              color: #777777;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 22.4px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ipc-full-width {
+    padding-bottom: 0% !important;
+
+    .vidya-img {
+      width: 100%;
+    }
+  }
+  .vidya-app-community {
+    .header-vommu {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: left;
+      color: #ffffff;
+      padding-top: 1.5rem;
+      @media (max-width: 768px) {
+        padding-top: 0rem;
+      }
+      span {
+        font-weight: 700;
+      }
+    }
+    .few-vidya-point {
+      margin-top: 1rem;
+      p {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+        color: #ffffff;
+        span {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .download-kinl {
+    margin-top: 4rem;
+    p {
+      font-size: 34px;
+      font-weight: 300;
+      line-height: 50px;
+      text-align: left;
+      color: #ffffff;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .qrs-dwown {
+    margin-top: 2rem;
+    display: flex;
+    gap: 3rem;
+    .android0rwq {
+      display: flex;
+      flex-direction: column;
+
+      gap: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

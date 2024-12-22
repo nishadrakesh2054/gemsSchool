@@ -1,0 +1,122 @@
+.qust {
+	background: url("../../assets/a0fecfd5c9870e3f7b129d2409b944b2.jpg")
+		no-repeat;
+	padding: 7rem 0;
+	// background-size: 100%;
+	background-size: cover;
+	.frq-qus {
+		margin-top: 1rem;
+		font-size: 55px;
+		font-weight: 300;
+		line-height: 66px;
+		text-align: center;
+		color: #fff;
+		span {
+			font-weight: 700;
+		}
+	}
+	.tabs-questions {
+		margin-top: 3rem;
+		.questions-tabs {
+			justify-content: center;
+			border-bottom: 0;
+			gap: 1.5rem;
+			.nav-link {
+				background: #006dad;
+
+				color: #fff;
+				border: none;
+				border-radius: 2px;
+			}
+			.active {
+				background: linear-gradient(
+					90deg,
+					#01a6fd 0%,
+					#17d0cf 51%,
+					#01a6fd 100%
+				);
+
+				color: #fff;
+				border: none;
+				border-radius: 2px;
+			}
+
+			.nav-link:hover {
+				background: linear-gradient(
+					90deg,
+					#01a6fd 0%,
+					#17d0cf 51%,
+					#01a6fd 100%
+				);
+				color: #fff;
+				border: none;
+				border-radius: 2px;
+				isolation: unset;
+			}
+			.nav-link:focus-visible {
+				box-shadow: none;
+			}
+		}
+	}
+	.btn-maks {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 2rem;
+	}
+}
+
+.FaqsAccordion {
+	.accordion-general {
+		background: transparent !important;
+		background-color: transparent !important;
+		border: none !important;
+		.accordion-item {
+			background-color: transparent;
+			border: none !important;
+			// border-left: #fff 1px solid;
+			margin-bottom: 2rem;
+			border-radius: 0%;
+			.accordion-headers {
+				background-color: transparent !important;
+				button {
+					background-color: transparent !important;
+					border: none;
+					box-shadow: none;
+					border-radius: 0%;
+					padding-top: 0%;
+				}
+				.accordion-button {
+					color: #17d0cf;
+					font-size: 22px;
+					font-weight: 500;
+					line-height: 33px;
+					text-align: left;
+					border-left: #17d0cf 3px solid;
+					border-radius: 0% !important;
+				}
+				.accordion-button::after {
+					background-color: #17d0cf;
+					border-radius: 100%;
+					padding: 0.3rem;
+					justify-content: center;
+					display: flex;
+					background-size: contain;
+					background-image: url("../../../assets/chevron-up-solid.svg") !important;
+				}
+				.collapsed {
+					color: #ffffff;
+					border-left: #4a8ec0 3px solid;
+					border-radius: 0%;
+				}
+				.collapsed::after {
+					background-color: #4d8fbe;
+				}
+			}
+			.main-ansa {
+				color: #67a0c9;
+				border-left: #17d0cf 3px solid;
+			}
+		}
+	}
+}

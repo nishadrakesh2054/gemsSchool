@@ -1,0 +1,141 @@
+.banner-career {
+  height: 50vh;
+  margin-top: -4rem;
+  // background-image: url("../../assets/Shape.png");
+  background-repeat: no-repeat;
+  .here-img {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(35%);
+    position: relative;
+  }
+  .text-here-only {
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .buttonlink {
+      display: flex;
+      justify-content: center;
+      gap: 0.3rem;
+      span {
+        padding: 0.5rem 0.7rem;
+        border-radius: 4px;
+        background: #3b3b3b;
+        color: #7a7a7a;
+      }
+      .home {
+        background: #17d0cf;
+        color: #fff;
+      }
+    }
+    @media (max-width: 768px) {
+      top: 60%;
+      p {
+        font-size: 20px;
+        line-height: unset;
+      }
+
+      .buttonlink {
+        span {
+          padding: 0.3rem 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+.CareerFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  padding: 3rem 0;
+  gap: 1rem;
+  p {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 45.6px;
+    text-align: left;
+  }
+  img {
+    width: 5rem;
+  }
+}
+
+.JobDecBanner {
+  .text-here-only {
+    // left: 25%;
+
+    p {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 45.6px;
+      text-align: center;
+      span {
+        font-weight: 300;
+      }
+    }
+    .job-tite {
+      p {
+        font-size: 54px;
+        font-weight: 400;
+        // line-height: 66px;
+        text-align: center;
+      }
+    }
+    .loc-job {
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+    @media (max-width: 768px) {
+      top: 55%;
+      p {
+        font-size: 20px;
+        line-height: unset;
+      }
+
+      .job-tite {
+        p {
+          font-size: 25px;
+          margin: 0%;
+          line-height: unset;
+        }
+      }
+      .loc-job {
+        p {
+          font-size: 10px;
+        }
+      }
+      .buttonlink {
+        span {
+          padding: 0.3rem 0.5rem;
+        }
+      }
+    }
+  }
+}

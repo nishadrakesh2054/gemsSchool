@@ -1,0 +1,84 @@
+.vidyapp {
+  padding-top: 7rem;
+  .vidyat-text {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 50.4px;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    span {
+      font-weight: 700;
+    }
+  }
+  .search-courses {
+    .form-search {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      button {
+        padding: 1rem 2rem;
+        background: linear-gradient(
+          90deg,
+          #01a6fd 0%,
+          #17d0cf 51%,
+          #01a6fd 100%
+        );
+        border: none;
+        border-top-left-radius: 0% !important;
+        border-bottom-left-radius: 0% !important ;
+      }
+      .search-cources {
+        width: 85%;
+        input {
+          padding: 1rem 2rem;
+          border-top-right-radius: 0% !important;
+          border-bottom-right-radius: 0% !important;
+          // border: none;
+        }
+      }
+    }
+  }
+  .vidya-row {
+    align-items: center;
+    .vidya-dow-text {
+      font-size: 42px;
+      font-weight: 300;
+      line-height: 50.4px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+    }
+    .vidya-app-col {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 2.5rem;
+    }
+    .vidya-app-img {
+      width: 78%;
+      @media (max-width: 768px) {
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+    }
+    .vidya-down-text-col {
+      padding-bottom: 3rem;
+    }
+    .extra-text-vidya {
+      margin-top: 2rem;
+      color: #777777;
+    }
+    .fownload-viofya-qurs {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      .andr-vidya {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+    }
+  }
+}

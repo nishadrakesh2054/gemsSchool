@@ -1,0 +1,61 @@
+.contact-gems-page {
+  .contact-container {
+    padding: 7rem 0;
+    .kepsintopuchhead {
+      p {
+        font-size: 55px;
+        font-weight: 300;
+        line-height: 66px;
+        text-align: center;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .logos-containr {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: center;
+      //   gap: 2rem;
+      flex-wrap: wrap;
+
+      .logo-text {
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 3rem;
+        border-right: 1px solid #d9d9d9;
+
+        .icon-social {
+          font-size: 60px;
+          font-weight: 400;
+          line-height: 60px;
+          text-align: center;
+          color: #d9d9d9;
+          &:hover {
+            color: #17d0cf;
+          }
+        }
+        p {
+          color: #333333;
+          font-weight: 500;
+        }
+        @media (max-width: 768px) {
+          padding: 0 1rem;
+          //   border: none;
+          .icon-social {
+            font-size: 40px;
+          }
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+      :last-child {
+        border: none;
+      }
+    }
+  }
+}

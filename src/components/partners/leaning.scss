@@ -1,0 +1,80 @@
+.LearningPartners {
+  padding: 7rem 0;
+  .react-multi-carousel-list {
+    position: unset;
+  }
+  .learning-text {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 45.6px;
+    text-align: left;
+    span {
+      font-weight: 700;
+    }
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+  }
+  .leaning-carousel {
+    position: relative;
+    margin-top: 2rem;
+
+    // li {
+    // 	// width: 10rem !important;
+    // }
+    .react-multiple-carousel__arrow--right,
+    .react-multiple-carousel__arrow--left {
+      top: -80px;
+      border-radius: 0%;
+      background: #f7f7f7;
+    }
+    .react-multiple-carousel__arrow::before {
+      color: #000;
+    }
+    .react-multiple-carousel__arrow--left {
+      left: 87%;
+    }
+    .react-multi-carousel-item {
+    }
+
+    .testimional-text {
+      margin-right: 4rem;
+      padding: 1rem;
+      border: 2px solid #f7f7f7;
+      border-radius: 4px;
+      position: relative;
+      .name-degi {
+        color: #17d0cf;
+
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18.2px;
+        text-align: left;
+        span {
+          font-weight: 300;
+        }
+      }
+    }
+
+    .hight-achiver-box {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  .partners-cro {
+    .react-multi-carousel-item {
+      padding: 0rem 2rem;
+      border-right: 2px solid #f7f7f7;
+      align-items: center;
+      align-items: center;
+      display: flex;
+      img {
+        width: 100%;
+      }
+      .sat-seven {
+        width: 8rem;
+      }
+    }
+  }
+}

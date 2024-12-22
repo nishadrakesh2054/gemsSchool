@@ -1,0 +1,19 @@
+.pagenotdouns {
+  .ot {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    a {
+      background-color: #17d0cf;
+      border-color: #17d0cf;
+      padding: 0.7rem 1rem;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

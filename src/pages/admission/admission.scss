@@ -1,0 +1,104 @@
+.admission {
+  .about-page {
+    margin: 7rem 0;
+
+    .related-links-message {
+      margin-bottom: 5rem;
+      p {
+        span {
+          font-weight: 700;
+        }
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 36px;
+        text-align: left;
+      }
+      .tabs-message-about {
+        background-color: #f7f7f7;
+        .nav-item {
+          a {
+            color: #777777;
+            border-bottom: 1px solid #eeeeee;
+            padding: 1rem var(--bs-nav-link-padding-x);
+          }
+          .active {
+            background-color: transparent;
+            font-weight: bold;
+          }
+        }
+        .accordion {
+          .accordion-item {
+            background-color: #f7f7f7;
+
+            border: none;
+            .accordion-button {
+              background-color: transparent;
+              padding: 1rem var(--bs-nav-link-padding-x);
+              color: #777777;
+
+              border-bottom: 1px solid #eeeeee;
+              &:focus {
+                box-shadow: none;
+              }
+            }
+            .accordion-button::after {
+              margin-left: 0.5rem;
+              background-size: 0.7rem;
+            }
+            .accordion-collapse {
+              padding: 0%;
+              .accordion-body {
+                padding: 0%;
+
+                a {
+                  color: #777777;
+                  border-bottom: 1px solid #eeeeee;
+                }
+                .active {
+                  background-color: transparent;
+                  font-weight: bold;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .related-links-message {
+      @media (max-width: 786px) {
+        margin-top: 2rem;
+      }
+      .tabs-message-about {
+        .tabs-message-about {
+          .nav-item {
+            a {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .admission-note {
+    padding: 2rem;
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 22.4px;
+      text-align: left;
+      color: #777777;
+      margin: 0;
+    }
+    background: #f7f7f7;
+  }
+  .buttons-admissions {
+    margin-top: 2.5rem;
+    display: flex;
+    // justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+      gap: 0.5rem;
+    }
+  }
+}

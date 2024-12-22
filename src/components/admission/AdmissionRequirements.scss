@@ -1,0 +1,157 @@
+.AdmissionRequirements {
+  .admission-gems {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 45.6px;
+    text-align: left;
+    span {
+      font-weight: 700;
+    }
+  }
+  .text-gems-admisoo {
+    margin-top: 3rem;
+    p {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+  .admission-req {
+    margin-top: 6rem;
+    .text-req {
+      margin-bottom: 3rem;
+      p {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 33.6px;
+        text-align: left;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    .list-of-req {
+      background: #f7f7f7;
+      border-radius: 4px;
+      .list-ones-many {
+        border-bottom: 1px solid #eeeeee;
+        padding: 1rem;
+
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 22.4px;
+          text-align: left;
+          color: #777777;
+          display: flex;
+          gap: 1.5rem;
+          margin-bottom: 0;
+          span {
+            color: #10abff;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .tabs-questions {
+    margin-top: 3rem;
+    .questions-tabs {
+      //   justify-content: center;
+      border-bottom: 0;
+      gap: 1.5rem;
+      .nav-link {
+        background: #006dad;
+
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+      }
+      .active {
+        background: linear-gradient(
+          90deg,
+          #01a6fd 0%,
+          #17d0cf 51%,
+          #01a6fd 100%
+        );
+
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+      }
+
+      .nav-link:hover {
+        background: linear-gradient(
+          90deg,
+          #01a6fd 0%,
+          #17d0cf 51%,
+          #01a6fd 100%
+        );
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        isolation: unset;
+      }
+      .nav-link:focus-visible {
+        box-shadow: none;
+      }
+    }
+  }
+  .admission-req {
+    .text-req {
+      .req-tabs {
+        .tabs-questions {
+          margin-top: 3rem;
+          .questions-tabs {
+            justify-content: center;
+            border-bottom: 0;
+            gap: 1.5rem;
+            .nav-link {
+              background: #006dad;
+
+              color: #fff;
+              border: none;
+              border-radius: 2px;
+            }
+            .active {
+              background: linear-gradient(
+                90deg,
+                #01a6fd 0%,
+                #17d0cf 51%,
+                #01a6fd 100%
+              );
+
+              color: #fff;
+              border: none;
+              border-radius: 2px;
+            }
+
+            .nav-link:hover {
+              background: linear-gradient(
+                90deg,
+                #01a6fd 0%,
+                #17d0cf 51%,
+                #01a6fd 100%
+              );
+              color: #fff;
+              border: none;
+              border-radius: 2px;
+              isolation: unset;
+            }
+            .nav-link:focus-visible {
+              box-shadow: none;
+            }
+          }
+        }
+        .tab-req-reqs {
+          .nav-item {
+            button {
+            }
+          }
+        }
+      }
+    }
+  }
+}

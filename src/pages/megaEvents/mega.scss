@@ -1,0 +1,38 @@
+.MegaEvents {
+  .gems-events {
+    margin-top: 7rem;
+    .mesagevents-text {
+      font-size: 55px;
+      font-weight: 300;
+      line-height: 66px;
+      text-align: center;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+  .mega-container {
+    margin-top: 2rem;
+    .mega-tabs {
+      justify-content: center;
+      border: none;
+      gap: 1rem;
+      .nav-item {
+        button {
+          border: none;
+          background: #006dad;
+          border-radius: 4px;
+          color: #fff;
+        }
+        .active {
+          background: linear-gradient(
+            90deg,
+            #01a6fd 0%,
+            #17d0cf 51%,
+            #01a6fd 100%
+          );
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.SendaMessage {
+  background: #f7f7f7;
+  padding: 7rem 0;
+  .send-mess {
+    font-size: 55px;
+    font-weight: 300;
+    line-height: 66px;
+    text-align: center;
+    span {
+      font-weight: 700;
+    }
+  }
+  .message-form {
+    margin-top: 2rem;
+    input,
+    .message-area {
+      border-top: none;
+
+      border-left: none;
+      border-right: none;
+      background: transparent;
+      border-radius: 0%;
+    }
+    .message-area {
+      height: 7rem;
+    }
+    label {
+      color: #757575;
+      background: transparent !important;
+      background-color: transparent !important;
+    }
+    .send-mess-btn {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+  }
+}

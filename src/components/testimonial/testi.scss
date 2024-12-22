@@ -1,0 +1,52 @@
+.testimonials {
+  padding: 0 0;
+  padding-bottom: 7rem;
+  @media (max-width: 768px) {
+    padding-bottom: 3rem;
+  }
+  .carousel-container {
+    height: 37rem;
+    @media (max-width: 768px) {
+      height: 100%;
+    }
+  }
+  .leaning-carousel {
+    .react-multiple-carousel__arrow--right,
+    .react-multiple-carousel__arrow--left {
+      top: -100px;
+      border-radius: 0%;
+      background: #f7f7f7;
+    }
+  }
+  .testimional-text {
+    height: 100%;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      font-size: 18px;
+      font-style: italic;
+      font-weight: 300;
+      line-height: 25.2px;
+      text-align: left;
+      color: #8c8c8c;
+      span {
+        font-weight: 700;
+        color: #000;
+      }
+    }
+    .name-degi {
+      span {
+        color: #17d0cf;
+      }
+    }
+  }
+}
+
+.afterimg {
+  position: absolute;
+  z-index: 1000;
+  right: 40px;
+  bottom: -30px;
+}

@@ -1,0 +1,465 @@
+.middle-school {
+  .durations {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+    background: #f5f5f5;
+    border-radius: 4px;
+    width: 70%;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 16.8px;
+      text-align: left;
+      margin-bottom: 0%;
+    }
+    .years-dur {
+      color: #17d0cf;
+    }
+    margin-bottom: 6rem;
+  }
+
+  .ipc-full-width {
+    width: unset;
+    background-repeat: no-repeat;
+    padding: 0;
+    .hight-school-tabs {
+      position: relative;
+      .tabs-high {
+        position: absolute;
+        top: -2.556rem;
+        border: none;
+        // margin-bottom: 5rem;
+        gap: 1rem;
+        .nav-item {
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          button {
+            border: 1px solid #b6b6b6;
+            background: #ffffff;
+            color: #777777;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            border-bottom-left-radius: 0px !important;
+            border-bottom-right-radius: 0px !important;
+          }
+          .active {
+            background-image: url("../../../assets/5d2bb81dedd3b91aaceb738996c335dd.jpg");
+            color: #ffffff;
+            border: none;
+          }
+        }
+      }
+      .sub-lis-row,
+      .text-pedogu,
+      .Eligibility {
+        padding-top: 3rem;
+        padding-bottom: 0rem;
+      }
+      .sub-lis-row {
+        .sub-list-table {
+          thead {
+            tr {
+              th {
+                background: transparent;
+                border-bottom: 1px solid #3080b6;
+                color: #ffffff;
+                padding: 1rem;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                background: transparent;
+                border-bottom: 1px solid #3080b6;
+                color: #ffffff;
+                padding: 1rem;
+
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .ipc-expalin {
+        padding: 2rem 0;
+      }
+    }
+    .Eligibility,
+    .text-pedogu {
+      p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: left;
+        color: #ffffff;
+      }
+      padding-bottom: 5rem;
+      .list-of-requi {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        p {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          span {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  .core-sub-offered {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #333333;
+  }
+}
+
+.academics {
+  .academics-comtaimewr {
+    margin-top: 7rem;
+    .imgs-acd {
+      img {
+        width: 100%;
+      }
+    }
+    .academic-tab-col {
+    }
+    .about-page {
+      .related-links-message {
+        margin-top: 0%;
+        .tabs-message-about {
+          a {
+            border-bottom: 1px solid #eeeeee;
+            background: #f7f7f7;
+            color: #777777;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+            text-decoration: none;
+            padding: 1rem 1rem;
+          }
+        }
+        .acadamic-tab-head {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .beyo-exes {
+    background: #f7f7f7;
+    padding-top: 7rem;
+
+    .bycs-exe-text {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+      margin-bottom: 3rem;
+    }
+    p {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+}
+
+.academics {
+  .academics-comtaimewr {
+    margin-top: 7rem;
+    .imgs-acd {
+      img {
+        width: 100%;
+      }
+    }
+    .academic-tab-col {
+    }
+    .about-page {
+      .related-links-message {
+        margin-top: 0%;
+        @media (max-width: 786px) {
+          margin-top: 2rem;
+        }
+        .tabs-message-about {
+          a {
+            border-bottom: 1px solid #eeeeee;
+            background: #f7f7f7;
+            color: #777777;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22.4px;
+            text-align: left;
+            text-decoration: none;
+            padding: 1rem 1rem;
+          }
+        }
+        .acadamic-tab-head {
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 36px;
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+  }
+  .beyo-exes {
+    background: #f7f7f7;
+    padding-top: 7rem;
+
+    .bycs-exe-text {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+      margin-bottom: 3rem;
+    }
+    p {
+      color: #333333;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+  }
+}
+
+.alevel {
+  .a-na-cam {
+    padding-bottom: 5rem;
+  }
+  .nat-alevel {
+    .heading-text-neb {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 33.6px;
+      text-align: left;
+      color: #333333;
+
+      span {
+        font-weight: 700;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+      color: #333333;
+      margin-bottom: 0%;
+      span {
+        font-size: 5px;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .alevel-tabes-alal {
+    .hight-school-tabs {
+      .high-high-tab {
+        // top: auto !important;
+      }
+    }
+  }
+  .ipc-full-width-high-school-alevel {
+    background-image: url("../../../assets/a0fecfd5c9870e3f7b129d2409b944b2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .head-ipc {
+      display: flex;
+      //   justify-content: center;
+
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: left;
+      color: #fff;
+      align-items: center;
+      gap: 1rem;
+      span {
+        font-weight: 700;
+      }
+
+      img {
+        width: 5rem;
+        height: 4rem;
+      }
+    }
+    .ipc-expalin {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+      text-align: left;
+    }
+    .hight-school-tabs {
+      position: relative;
+      padding-top: 2rem;
+      padding-bottom: 3rem;
+      .high-high-tab {
+        position: absolute;
+        top: -2.5rem;
+        gap: 1rem;
+        border-bottom: none;
+        @media (max-width: 768px) {
+          //   overflow-x: scroll;
+          //   flex-wrap: nowrap;
+          top: -5rem;
+          gap: 0.3rem;
+        }
+        .nav-item {
+          border-radius: 2px;
+
+          button {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            color: #777777;
+            border-radius: 2px !important;
+            border: 0.5px solid #777777;
+
+            &:hover {
+              // border-color: transparent;
+            }
+          }
+          .active {
+            background-image: url("../../../assets/a0fecfd5c9870e3f7b129d2409b944b2.jpg");
+            color: #fff;
+            border-bottom: none;
+            border: none;
+            border-radius: 2px !important;
+          }
+        }
+      }
+      .sub-lis-row,
+      .text-pedogu,
+      .Eligibility,
+      .exam-prode {
+        padding-top: 2rem;
+        padding-bottom: 2rem !important;
+      }
+      .sub-lis-row {
+        .sub-list-table {
+          thead {
+            tr {
+              th {
+                background: transparent;
+                border-bottom: 1px solid #3080b6;
+                color: #ffffff;
+                padding: 1rem;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+              }
+            }
+          }
+          tbody {
+            tr {
+              td {
+                background: transparent;
+                border-bottom: 1px solid #3080b6;
+                color: #ffffff;
+                padding: 1rem;
+
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 22.4px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .Eligibility,
+      .text-pedogu {
+        p {
+          font-size: 20px;
+          font-weight: 300;
+          text-align: left;
+          color: #ffffff;
+        }
+        padding-bottom: 5rem;
+        .list-of-requi {
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          p {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            span {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.year-props {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.link-props {
+  text-decoration: none;
+}
+.hight-achiver-box {
+  margin-right: 2rem;
+  background: #f1f1f3;
+  padding: 1rem;
+  img {
+    width: 100%;
+    height: 15rem;
+  }
+  .inftext {
+    margin-top: 2rem;
+    .more0weidgth-ni {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 30px;
+      text-align: left;
+      color: #333333;
+    }
+  }
+  p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: left;
+    margin-bottom: 0%;
+    color: #777777;
+  }
+}

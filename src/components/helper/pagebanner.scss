@@ -1,0 +1,71 @@
+.PageBanner {
+  height: 50vh;
+  margin-top: -4rem;
+  // background-image: url("../../assets/Shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .here-img {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(35%);
+    position: relative;
+  }
+  .text-here-only {
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+    p {
+      font-size: 38px;
+      font-weight: 300;
+      line-height: 45.6px;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .buttonlink {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      .link-hone-banner {
+        text-decoration: none;
+        margin: 0%;
+        align-items: center;
+        display: flex;
+      }
+      span {
+        padding: 0.5rem 0.7rem;
+        border-radius: 4px;
+        background: #3b3b3b;
+        color: #cdcdcd;
+      }
+      .home {
+        background: #17d0cf;
+        color: #fff;
+      }
+    }
+    @media (max-width: 768px) {
+      top: 56%;
+      p {
+        font-size: 20px;
+      }
+
+      .buttonlink {
+        span {
+          padding: 0.3rem 0.5rem;
+        }
+      }
+    }
+  }
+}

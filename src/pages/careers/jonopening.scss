@@ -1,0 +1,115 @@
+.job-opening {
+  .new-opeinigns {
+    padding: 4rem 0;
+    .cur-text {
+      p {
+        font-size: 55px;
+        font-weight: 300;
+        line-height: 66px;
+        text-align: center;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 2rem 0;
+      .cur-text {
+        p {
+          font-size: 30px;
+          line-height: unset;
+          margin: 0%;
+        }
+      }
+    }
+  }
+  .list-tabs-cards {
+    .list-nun {
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: left;
+      color: #333333;
+      span {
+        background: #f8f8f8;
+        padding: 0.2rem 0.5rem;
+        border-radius: 14px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.4px;
+        text-align: center;
+        color: #8c8c8c;
+      }
+    }
+  }
+  .listins {
+    margin-bottom: 6rem;
+    .card-link {
+      text-decoration: none;
+    }
+    .card-job {
+      border: 0.8px solid #cccccc;
+      box-shadow: 0px 2px 2px 0px #00000040;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      .card-job-body {
+        .job-title {
+          color: #0079c0;
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 28px;
+          text-align: left;
+          p {
+            margin: 0;
+          }
+        }
+        .loc-job {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 28px;
+          text-align: left;
+          color: #333333;
+        }
+        .small-intor-jb {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 28px;
+          text-align: left;
+          color: #333333;
+        }
+        .date-full-type {
+          margin-top: 2rem;
+          display: flex;
+          justify-content: space-between;
+          p {
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 28px;
+            text-align: left;
+            margin: 0%;
+            color: #333333;
+          }
+        }
+      }
+    }
+  }
+  .goto-wbsit {
+    margin-top: 5rem;
+    padding: 2rem 0;
+    text-align: center;
+    border-top: 2px solid #cccccc;
+
+    a {
+      text-decoration: none;
+      font-size: 28px;
+      font-weight: 200;
+      line-height: 45.6px;
+      text-align: center;
+      color: #0079c0;
+    }
+  }
+}
+
+.alex {
+  background: linear-gradient(90deg, #01a6fd 0%, #17d0cf 51%, #01a6fd 100%);
+}

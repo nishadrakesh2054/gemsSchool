@@ -1,0 +1,54 @@
+.thunderbolts {
+  margin-top: 5rem;
+  background-image: url("../../assets/Rectangle-back.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: contain;
+  padding-bottom: 5rem;
+  .thunde-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #333333;
+  }
+  .thunder-bolt-text {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    h3 {
+      font-size: 45px;
+      font-weight: 300;
+      line-height: 55px;
+      text-align: left;
+      span {
+        font-weight: 700;
+      }
+      @media (max-width: 768px) {
+        font-size: 40px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    margin-bottom: 4rem;
+    .text-thunder {
+      .line-under {
+        width: 50px;
+        height: 2px;
+        background: #17d0cf;
+      }
+    }
+  }
+  p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    text-align: center;
+    color: #333333;
+    span {
+      font-weight: 500;
+    }
+  }
+}

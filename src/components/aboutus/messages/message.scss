@@ -1,0 +1,74 @@
+.founder-messagfe {
+  .welcome-togem {
+    .imag-dir-founder {
+      float: right;
+      margin-top: -4rem;
+
+      margin-bottom: 1rem;
+      @media (max-width: 767px) {
+        // margin: auto;
+        margin: 1rem;
+      }
+    }
+    .barunsir {
+      width: 20rem;
+    }
+    .text-photo {
+      margin: 3rem 0;
+      position: relative;
+      overflow: hidden;
+
+      p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #333333;
+
+        .text-bold {
+          font-weight: bold;
+        }
+      }
+
+      .imag-dir {
+        float: right;
+        // margin: 0 20px 20px 0; // Adjust the margins as needed
+        max-width: 100%;
+        // margin-top: -10rem;
+        // margin: 1rem;
+      }
+      .message-text {
+        margin-top: 2rem;
+      }
+      .imag-dir-prin {
+        width: 50%;
+        float: left;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+        margin-top: -2rem;
+        @media (max-width: 767px) {
+          width: 100%;
+          margin: auto;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .text-photo-dounder {
+      margin: 3rem 0;
+      position: relative;
+      //   overflow: hidden;
+
+      p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        color: #333333;
+
+        .text-bold {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

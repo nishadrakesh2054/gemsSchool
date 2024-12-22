@@ -1,0 +1,144 @@
+.about-us-comp {
+  .about-us-row {
+    padding-top: 9rem;
+
+    .form-side {
+      //   display: flex;
+      position: relative;
+
+      .form-bac-color {
+        background: linear-gradient(91.93deg, #01a7fb 0.14%, #16e0e3 17.12%);
+        border-radius: 10px;
+        height: 24.5rem;
+        width: 50%;
+      }
+      .form-main-cont {
+        border-radius: 10px;
+        background-position: center;
+        text-align: center;
+        color: #fff;
+        padding: 2rem 4rem;
+        background: linear-gradient(91.93deg, #0000003a 0.14%, #00000059 0.5%),
+          url("../../assets/hero/hero-sec/WeddingDiaryNepal-2020-IMG-1194.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        // filter: brightness(50%);
+        // background-o: ;
+        position: absolute;
+        margin-left: 2rem;
+        bottom: -4.4%;
+        // z-index: 100000;
+        // .form {
+        //   filter: brightness(100%);
+        // }
+
+        p {
+          font-size: 26px;
+          font-weight: 300;
+          text-align: center;
+          margin-bottom: 0%;
+        }
+        h5 {
+          font-size: 32px;
+          font-weight: 700;
+          text-align: center;
+        }
+        button {
+          width: 100%;
+          background: linear-gradient(
+            90deg,
+            #01a6fd 0%,
+            #17d0cf 51%,
+            #01a6fd 100%
+          );
+          border-radius: 0;
+        }
+        .form {
+          .form-control {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .about-us-comp {
+      .ab-head {
+        color: #a9a3a3;
+        //   font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22.4px;
+        letter-spacing: 7px;
+        // text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+        span {
+          color: #17d0cf;
+          font-size: 10px;
+          text-align: center;
+        }
+      }
+      .underline-line {
+        margin-top: 1rem;
+        width: 50px;
+        height: 2px;
+        background: #17d0cf;
+      }
+      .abou-txt {
+        margin-top: 3rem;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 28px;
+        text-align: left;
+      }
+    }
+    .buttons {
+      margin-top: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 1080px) {
+  .about-us-comp {
+  }
+}
+
+@media (max-width: 1080px) {
+  .about-us-comp {
+    margin-top: 5rem;
+    .about-us-row {
+      .form-side {
+        .form-main-cont {
+          padding: 2.5rem 4rem;
+          //   margin: 0;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us-comp {
+    .about-us-row {
+      .form-side {
+        .form-main-cont {
+          //   height: 25rem;
+        }
+      }
+      .about-us-comp {
+        margin-top: 5rem;
+        .abou-txt {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 25.2px;
+          text-align: left;
+          color: #333333;
+        }
+      }
+    }
+  }
+}
