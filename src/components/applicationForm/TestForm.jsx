@@ -1,28 +1,29 @@
 import React, { useState, useRef } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
 import "./Cvform.scss";
 
-const Cvform = ({ onCloseForm }) => {
+const TestForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
     file: null,
     coverLetter: "",
-    position: "primary",
+    position: "Primary Level",
   });
 
   const formRef = useRef();
+  const GETFORM_ENDPOINT = "https://getform.io/f/alllvgya";
 
   const handleChange = (e) => {
     const { name, value, files } = e.target;
 
     if (files) {
       const file = files[0];
-      if (file.size > 50 * 1024) {
-        toast.error("File size exceeds 50KB. Please upload a smaller file.", {
+      if (file.size > 2 * 1024 * 1024) {
+        toast.error("File size exceeds 1MB. Please upload a smaller file.", {
           position: "top-center",
           autoClose: 3000,
         });
@@ -35,7 +36,7 @@ const Cvform = ({ onCloseForm }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!formData.file) {
@@ -46,48 +47,51 @@ const Cvform = ({ onCloseForm }) => {
       return;
     }
 
-    emailjs
-      .sendForm(
-        "service_v860vkq",
-        "template_awcn3kv",
-        formRef.current,
-        "4ETbu5ZPYfx44iSlo"
-      )
-      .then((response) => {
-        toast.success("CV submitted successfully!", {
-          position: "top-center",
-          autoClose: 3000,
-        });
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          file: null,
-          coverLetter: "",
-          position: "primary",
-        });
-      })
-      .catch((error) => {
-        toast.error("Failed to submit the CV. Please try again.", {
-          position: "top-center",
-          autoClose: 3000,
-        });
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("phone", formData.phone);
+    formDataToSend.append("position", formData.position);
+    formDataToSend.append("coverLetter", formData.coverLetter);
+    formDataToSend.append("file", formData.file);
+
+    try {
+      await axios.post(GETFORM_ENDPOINT, formDataToSend, {
+        headers: { "Content-Type": "multipart/form-data" },
       });
+
+      toast.success("CV submitted successfully!", {
+        position: "top-center",
+        autoClose: 3000,
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        file: null,
+        coverLetter: "",
+        position: "primary",
+      });
+      formRef.current.reset();
+    } catch (error) {
+      toast.error("Failed to submit the CV. Please try again.", {
+        position: "top-center",
+        autoClose: 3000,
+      });
+    }
   };
 
   return (
-    <Container className="d-flex justify-content-center align-items-center min-vh-100">
-      <Row className="w-100">
-        <Col md={6} className="mx-auto">
-          <div className="cv-form-container px-5 py-3 shadow-lg rounded position-relative">
-            <button
-              className="close-button text-danger fs-2"
-              onClick={onCloseForm}
+    <Container className="d-flex justify-content-center align-items-center ">
+      <Row  className="w-100">
+        <Col className="cv-form-container ">
+          <div >
+            <Form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              encType="multipart/form-data"
             >
-              &times;
-            </button>
-            <h2 className="text-center mb-2">Submit Your CV</h2>
-            <Form ref={formRef} onSubmit={handleSubmit} encType="multipart/form-data">
               <Form.Group className="mb-3" controlId="formName">
                 <Form.Label>Name</Form.Label>
                 <Form.Control
@@ -132,19 +136,8 @@ const Cvform = ({ onCloseForm }) => {
                   <option value="middle">Middle Level</option>
                   <option value="secondary">Secondary Level</option>
                   <option value="high">Higher Level</option>
-                  <option value="administration">Administration</option>
+                  <option value="administration">Administration Level</option>
                 </Form.Select>
-              </Form.Group>
-              <Form.Group className="mb-3" controlId="formCoverLetter">
-                <Form.Label>Cover Letter</Form.Label>
-                <Form.Control
-                  as="textarea"
-                  rows={4}
-                  placeholder="Write your cover letter"
-                  name="coverLetter"
-                  value={formData.coverLetter}
-                  onChange={handleChange}
-                />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formFile">
                 <Form.Label>Upload Resume (PDF)</Form.Label>
@@ -155,6 +148,18 @@ const Cvform = ({ onCloseForm }) => {
                   onChange={handleChange}
                 />
               </Form.Group>
+              <Form.Group className="mb-3" controlId="formCoverLetter">
+                <Form.Label>Cover Letter</Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={6}
+                  placeholder="Write your cover letter"
+                  name="coverLetter"
+                  value={formData.coverLetter}
+                  onChange={handleChange}
+                />
+              </Form.Group>
+
               <div className="text-center">
                 <Button type="submit" className="submit-btn">
                   Submit Application
@@ -168,4 +173,4 @@ const Cvform = ({ onCloseForm }) => {
   );
 };
 
-export default Cvform;
+export default TestForm;

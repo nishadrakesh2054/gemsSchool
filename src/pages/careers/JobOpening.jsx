@@ -2,13 +2,11 @@ import React, { useEffect, useState } from "react";
 import CareerBanner from "../../components/careers/CareerBanner";
 import DotTexts from "../../components/helper/DotTexts";
 import "./jonopening.scss";
-
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Modal } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import Footer from "../../components/footer/Footer";
-
-import ApplicationForm from "../../components/applicationForm/Cvform";
+import ApplicationForm from "../../components/applicationForm/TestForm";
 
 const JobOpening = () => {
   const [showForm, setShowForm] = useState(false);
@@ -31,8 +29,6 @@ const JobOpening = () => {
       });
   }, []);
 
-
-  
   const handleButtonClick = () => {
     setShowForm(!showForm);
   };
@@ -94,22 +90,24 @@ const JobOpening = () => {
             </Row>
           </div>
 
-          {/* {!showForm && (
-            <div className="d-flex justify-content-center ">
-              <Button onClick={handleButtonClick} className="alex border-0 px-3">DROP YOUR CV</Button>
-            </div>
-          )}
+          <div className="d-flex justify-content-center ">
+            <Button onClick={handleButtonClick} className="alex border-0 px-3">
+              DROP YOUR CV
+            </Button>
+          </div>
 
-          {showForm && <ApplicationForm />} */}
-              {!showForm && (
-            <div className="d-flex justify-content-center ">
-              <Button onClick={handleButtonClick} className="alex border-0 px-3">
-                DROP YOUR CV
-              </Button>
-            </div>
-          )}
+          {/* Modal for ApplicationForm */}
+          <Modal show={showForm} onHide={handleButtonClick}>
+            <Modal.Header closeButton>
+              <Modal.Title className="text-center">Submit Your CV</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <ApplicationForm />
+            </Modal.Body>
+          </Modal>
 
-          {showForm && <ApplicationForm onCloseForm={handleButtonClick} />}
+
+
         </Container>
 
         <Footer />
